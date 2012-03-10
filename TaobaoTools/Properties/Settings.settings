@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TaobaoTools.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ExpressOffsetX" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ExpressOffsetY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OrderFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="LastCompany" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastOutSid" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SenderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">湘山红食品</Value>
+    </Setting>
+    <Setting Name="SenderCity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">湖南岳阳</Value>
+    </Setting>
+    <Setting Name="SenderAdress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">湖南省 岳阳市 竹阴街117号</Value>
+    </Setting>
+    <Setting Name="SenderMobile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">18274061066</Value>
+    </Setting>
+    <Setting Name="SenderZip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">414000</Value>
+    </Setting>
+    <Setting Name="OrderPageSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">550, 975</Value>
+    </Setting>
+    <Setting Name="OrderMaxPageNum" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

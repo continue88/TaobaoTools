@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB717B61-C1D6-4323-B60A-EEC70C3D936E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaobaoTools</RootNamespace>
+    <AssemblyName>TaobaoTools</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DefaultSettings.cs" />
+    <Compile Include="Data\ItemData.cs" />
+    <Compile Include="Data\ItemDataContainer.cs" />
+    <Compile Include="Data\ItemDataInfo.cs" />
+    <Compile Include="Data\LogisticsCopanyConverter.cs" />
+    <Compile Include="Data\LogisticsSendInfo.cs" />
+    <Compile Include="Data\TradeData.cs" />
+    <Compile Include="Data\TradeDataContainer.cs" />
+    <Compile Include="Data\TradeDataInfo.cs" />
+    <Compile Include="Data\TradeGroupInfo.cs" />
+    <Compile Include="Data\TradeListInfo.cs" />
+    <Compile Include="Data\TradeInfo.cs" />
+    <Compile Include="Dialog\CoreCenterDlg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\CoreCenterDlg.Designer.cs">
+      <DependentUpon>CoreCenterDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DataCollectionDlg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\DataCollectionDlg.Designer.cs">
+      <DependentUpon>DataCollectionDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ItemListDlg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\ItemListDlg.Designer.cs">
+      <DependentUpon>ItemListDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\LoginDlg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\LoginDlg.Designer.cs">
+      <DependentUpon>LoginDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\PrintExpressDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PrintExpressDlg.Designer.cs">
+      <DependentUpon>PrintExpressDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\PrintOrderDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PrintOrderDlg.Designer.cs">
+      <DependentUpon>PrintOrderDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\TradeListDlg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\TradeListDlg.Designer.cs">
+      <DependentUpon>TradeListDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SettingsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SettingsDlg.Designer.cs">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TopClientHelper.cs" />
+    <EmbeddedResource Include="Dialog\CoreCenterDlg.resx">
+      <DependentUpon>CoreCenterDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DataCollectionDlg.resx">
+      <DependentUpon>DataCollectionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ItemListDlg.resx">
+      <DependentUpon>ItemListDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\LoginDlg.resx">
+      <DependentUpon>LoginDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PrintExpressDlg.resx">
+      <DependentUpon>PrintExpressDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PrintOrderDlg.resx">
+      <DependentUpon>PrintOrderDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\TradeListDlg.resx">
+      <DependentUpon>TradeListDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SettingsDlg.resx">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TopSdk\TopSdk.csproj">
+      <Project>{9C11CAE5-5188-4E71-825B-68FC3135728A}</Project>
+      <Name>TopSdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Express.jpg" />
+    <None Include="Resources\Properties.bmp" />
+    <None Include="Resources\Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterAcross.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkbox.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
